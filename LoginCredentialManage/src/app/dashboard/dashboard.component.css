@@ -1,0 +1,23 @@
+.mainContent {}
+
+.edgeColumn {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 500px;
+    background-color: #aaa
+}
+
+.centerColumn {
+    float: left;
+    width: 60%;
+    padding: 5px;
+    height: 500px;
+    background-color: #ccc
+}
+
+.accessFrame {
+    background-color: black;
+    font-weight: bold;
+    color: aquamarine;
+}

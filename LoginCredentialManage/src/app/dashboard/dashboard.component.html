@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<app-topbar></app-topbar>
+<h1 class="text-center">Hello {{ currentUser.username?currentUser.username:"Unknown user!" }}</h1>
+<h3 class="text-center">You have {{ currentUser.roles?" access as: "+currentUser.roles:"no access at all.Please
+    login."}}</h3>
+
+<div class="accessFrame text-center">
+    <h5>ADMIN ACCESS: {{ admin}} </h5>
+    <h5>MODERATOR ACCESS: {{moderator}}</h5>
+    <h5>USER ACCESS: {{usr}}</h5>
+</div>
+<div class="text-center">
+    <logout></logout>
+</div>
