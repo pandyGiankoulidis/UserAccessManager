@@ -30,7 +30,7 @@ GET  | /api/test/mod    | 'x-access-token' Header in request, with a Jwt access 
 GET  | /api/test/admin  | 'x-access-token' Header in request, with a Jwt access token string| Test if the access token belongs to 'admin' role|
 
 ### Example in angular
-In the LoginCredentailManage folder, there is an angular app that uses this node system as back-end. Change thw working directory to this diractory and run
+In the LoginCredentailManage folder, there is an angular app that uses this node system as back-end. Change the working directory to this diractory and run
 ~~~
 ng serve
 ~~~
