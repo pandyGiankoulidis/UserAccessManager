@@ -9,6 +9,7 @@ const sessions = require('express-session');
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 
+
 /**
  * 
  * Signup service
@@ -63,6 +64,7 @@ exports.signup = (req, res) => {
   });
 };
 
+
 /**
  * 
  * Login service
@@ -110,6 +112,7 @@ exports.signin = (req, res) => {
       });
     });
 };
+
 
 /**
  * Reset password service

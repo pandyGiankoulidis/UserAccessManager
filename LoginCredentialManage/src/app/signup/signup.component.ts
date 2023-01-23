@@ -50,6 +50,7 @@ export class SignupComponent implements OnInit {
     return this.signupForm.controls['age'];
   }
 
+
   onSubmit(): void {
     this.submitted = true;
     if (this.signupForm.valid) {
@@ -82,7 +83,7 @@ export class SignupComponent implements OnInit {
 
           error: event => {
             this.falseSignup = true;
-            this.errorMessage = "error submiting form " + event.message;
+            this.errorMessage = "* Username or email is already taken";
           }
         });
       this.submitted = true;

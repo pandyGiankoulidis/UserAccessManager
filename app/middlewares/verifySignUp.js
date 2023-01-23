@@ -4,8 +4,6 @@ const ROLES = db.role;
 const User = db.user;
 
 checkDuplicateUsername = (req, res, next) => {
-  // Username
-  console.log(req.body);
 
   User.findOne({
     username: req.body.username
@@ -16,7 +14,6 @@ checkDuplicateUsername = (req, res, next) => {
     }
 
     if (user) {
-      console.log("found user " + user.username);
       res.status(400).send({ message: "Failed! Username is already in use!" });
       return;
     }
